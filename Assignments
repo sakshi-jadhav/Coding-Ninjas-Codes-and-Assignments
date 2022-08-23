@@ -1,0 +1,62 @@
+11) Same output - 
+        Which of the following codes gives same output:
+        1
+           int i=1;
+           while(i<5)
+           {
+               System.out.print(2*i);
+               i=i+1;
+           }
+           
+           dry run : 
+                i = 1 2 3 4 5
+           output = 2 4 6 8 -
+           --------------------------------------------
+        2
+           int i=2;
+           while(i<10)
+           {
+               System.out.print(i);
+               i=i+2;
+           }
+           
+            dry run : 
+                i = 2 4 6 8 10
+           output = 2 4 6 8 -
+           --------------------------------------------
+        3
+           int i=2;
+           while(i<10)
+           {
+               System.out.print(i);
+               i*=2;
+           }
+           
+            dry run : 
+                i = 2 4 8 16
+           output = 2 4 8 -
+           --------------------------------------------
+        4
+           int i=10;
+           while(i>0)
+           {
+               if(i%2==0)
+               {
+                   System.out.print(10-i);
+               }
+               i--;
+           }
+           
+            dry run : 
+                i = 10 9 8 7 6 5 4 3 2 1 0
+           output =  0 - 2 - 4 - 6 - 8 - -
+           --------------------------------------------
+           
+           Answer : 1 2 
+           
+           Solution Description :
+                Output of the codes are:
+                Code 1:   2468
+                Code 2:   2468
+                Code 3:   248
+                Code 4:   02468
